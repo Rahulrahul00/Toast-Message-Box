@@ -42,8 +42,16 @@ body{
     align-items: center;
     display: flex;
     position: relative;
+    transform: translateX(100%);
+    animation: moveleft 0.5s linear forwards;
 
 
+}
+
+@keyframes moveleft{
+    100%{
+        transform: translateX(0);
+    }
 }
 .toast i{
     margin: 0 20px;
@@ -60,4 +68,16 @@ body{
     height: 5px;
     background: green;
     animation: anim 5s linear forwards;
+}
+@keyframes anim {
+    100%{
+        width: 0;
+    }
+}
+
+.toast.Error::after{
+    background: red;
+}
+.toast.Invaild::after{
+    background: orange;
 }
