@@ -14,5 +14,10 @@ toast.innerHTML = msg;
 toastBox.appendChild(toast);
 
 
+setTimeout(()=>{
+  toast.remove();
+},6000);
+
 
 }
+
