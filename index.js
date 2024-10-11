@@ -13,9 +13,6 @@ toast.classList.add('toast');
 toast.innerHTML = msg;
 toastBox.appendChild(toast);
 
-if(msg.include('Error')){
-  toast.classList.add('Error');
-}
 
 
 if(msg.includes('Error')){
@@ -26,11 +23,10 @@ if(msg.includes('Invaild')){
     toast.classList.add('Invaild');
 }
 
-
 setTimeout(()=>{
   toast.remove();
-},6000);
 
+},6000)
 
 }
 
