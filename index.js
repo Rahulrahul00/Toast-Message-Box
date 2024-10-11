@@ -13,6 +13,10 @@ toast.classList.add('toast');
 toast.innerHTML = msg;
 toastBox.appendChild(toast);
 
+if(msg.include('Error')){
+  toast.classList.add('Error');
+}
+
 
 setTimeout(()=>{
   toast.remove();

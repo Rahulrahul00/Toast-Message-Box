@@ -62,3 +62,14 @@ body{
     animation: anim 5s linear forwards;
     
 }
+
+@keyframes anim {
+    100%{
+        width: 0;
+    }
+
+}
+
+.toast.Error::after{
+    background: red;
+}
